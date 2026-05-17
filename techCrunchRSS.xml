@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Thu, 14 May 2026 15:42:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.4</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Spotify to adopt Apple’s new video podcast tech, offering creators easier cross-platform distribution</title>
+		<link>https://techcrunch.com/2026/05/14/spotify-to-adopt-apples-new-video-podcast-tech-offering-creators-easier-cross-platform-distribution/</link>
+		
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 15:42:18 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[apple podcasts]]></category>
+		<category><![CDATA[podcasts]]></category>
+		<category><![CDATA[Spotify]]></category>
+		<category><![CDATA[video podcasts]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122629</guid>
+
+					<description><![CDATA[Spotify will let creators distribute and monetize video podcasts on Apple Podcasts using Apple’s HLS streaming technology, without changing their existing workflows.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Khosla Ventures is betting $10M on Ian Crosby, whose last startup, Bench, imploded</title>
+		<link>https://techcrunch.com/2026/05/14/khosla-ventures-is-betting-10m-on-ian-crosby-whose-last-startup-bench-imploded/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 15:20:18 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[accounting]]></category>
+		<category><![CDATA[bench]]></category>
+		<category><![CDATA[Khosla Ventures]]></category>
+		<category><![CDATA[synthetic]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122569</guid>
+
+					<description><![CDATA[Crosby is building Synthetic, a fully autonomous AI bookkeeping service for other startups. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to turn off Instagram&#8217;s new Instants feature and retract photos you accidentally shared</title>
+		<link>https://techcrunch.com/2026/05/14/how-to-turn-of-instagrams-new-instants-feature-and-retract-photos-you-accidentally-shared/</link>
+		
+		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 15:06:39 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Instagram]]></category>
+		<category><![CDATA[Meta]]></category>
+		<category><![CDATA[social media]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122578</guid>
+
+					<description><![CDATA[While the Meta-owned social network billed Instants as a new format to share real-life moments as they’re happening, many users are looking for a way  to turn off the feature, especially those who have ended up accidentally sending images to others not fully understanding how the feature works. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>A spyware investigator exposed Russian government hackers trying to hijack Signal accounts</title>
+		<link>https://techcrunch.com/2026/05/14/a-spyware-investigator-exposed-russian-government-hackers-trying-to-hijack-signal-accounts/</link>
+		
+		<dc:creator><![CDATA[Lorenzo Franceschi-Bicchierai]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 14:07:40 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<category><![CDATA[Amnesty International]]></category>
+		<category><![CDATA[cybersecurity]]></category>
+		<category><![CDATA[hackers]]></category>
+		<category><![CDATA[hacking]]></category>
+		<category><![CDATA[russia]]></category>
+		<category><![CDATA[signal]]></category>
+		<category><![CDATA[Spyware]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122530</guid>
+
+					<description><![CDATA[A group of likely Russian government hackers tried to hack a security researcher who investigates spyware attacks. He was then able to turn the tables on the hackers and reveal details of their espionage campaign.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Cisco cuts nearly 4,000 jobs to spend more on AI, reports &#8216;record quarterly revenue&#8217;</title>
+		<link>https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/</link>
+		
+		<dc:creator><![CDATA[Zack Whittaker]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 14:01:14 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[chuck robbins]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[cybersecurity]]></category>
+		<category><![CDATA[Layoffs]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122526</guid>
+
+					<description><![CDATA[This is Cisco's latest layoff in recent years, while the company's chief executive touts record revenue and growth.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Wirestock raises $23M to supply creative multi-modal data to AI labs</title>
+		<link>https://techcrunch.com/2026/05/14/wirestock-raises-23m-to-supply-multi-modal-data-to-ai-labs/</link>
+		
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Nava Ventures]]></category>
+		<category><![CDATA[Wirestock]]></category>
+		<category><![CDATA[Mercor]]></category>
+		<category><![CDATA[AI data]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3120665</guid>
+
+					<description><![CDATA[Wirestock has over 700,000 creators on its platform, which supplies photos, videos and 3D content to AI labs.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Two weeks left: Startup Battlefield 200 applications close May 27</title>
+		<link>https://techcrunch.com/2026/05/14/two-weeks-left-startup-battlefield-200-applications-close-may-27/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startup Battlefield]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122450</guid>
+
+					<description><![CDATA[Your shot at VC access, global visibility, TechCrunch coverage, and $100K equity-free funding is running out. Deadline to apply is May 27. Apply now.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Uber to open 2 campuses in India to support product development, operations</title>
+		<link>https://techcrunch.com/2026/05/14/uber-to-open-2-campuses-in-india-to-support-product-development-operations/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 13:43:27 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Dara Khosrowshahi]]></category>
+		<category><![CDATA[Uber]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122523</guid>
+
+					<description><![CDATA[Uber plans to open two new engineering campuses with a capacity of nearly 10,000 people in India by the end of 2027.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Who decides what AI tells you? Campbell Brown, once Meta&#8217;s news chief, has thoughts</title>
+		<link>https://techcrunch.com/2026/05/13/who-decides-what-ai-tells-you-campbell-brown-once-metas-news-chief-has-thoughts/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 06:05:31 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Campbell Brown]]></category>
+		<category><![CDATA[Forum AI]]></category>
+		<category><![CDATA[Lerer Hippeau]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122447</guid>
+
+					<description><![CDATA["The conversation is sort of happening in Silicon Valley around one thing, and a totally different conversation is happening among consumers."
+
+]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Clio&#8217;s $500M milestone arrives just as Anthropic ups the ante</title>
+		<link>https://techcrunch.com/2026/05/13/clios-500m-milestone-arrives-just-as-anthropic-ups-the-ante/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Thu, 14 May 2026 05:24:39 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Clio]]></category>
+		<category><![CDATA[legal tech]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122444</guid>
+
+					<description><![CDATA[Legal tech startups, including Clio, which just hit $500 million in ARR, are seeing massive customer adoption.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Notion just turned its workspace into a hub for AI agents</title>
+		<link>https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 21:45:09 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[AI agents]]></category>
+		<category><![CDATA[Notion]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122395</guid>
+
+					<description><![CDATA[Notion’s new developer platform lets teams connect AI agents, external data sources, and custom code directly into their workspace as the company pushes deeper into agentic productivity software.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Musk’s xAI is running nearly 50 gas turbines unchecked at its Mississippi data center</title>
+		<link>https://techcrunch.com/2026/05/13/musks-xai-is-running-nearly-50-gas-turbines-unchecked-at-its-mississippi-data-center/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 19:49:42 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[air pollution]]></category>
+		<category><![CDATA[data centers]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[natural gas]]></category>
+		<category><![CDATA[xAI]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122344</guid>
+
+					<description><![CDATA[Gas turbines at xAI's Colossus 2 data center have drawn a lawsuit over the company's use of "mobile" gas turbines as power plants.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic&#8217;s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are</title>
+		<link>https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/</link>
+		
+		<dc:creator><![CDATA[Lucas Ropek]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 19:28:06 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[agents]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Cat Wu]]></category>
+		<category><![CDATA[Claude]]></category>
+		<category><![CDATA[claude code]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3120267</guid>
+
+					<description><![CDATA[The head of product for Claude Code and Cowork says that the next big step for AI is proactivity.  ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>This is what some of the world&#8217;s largest banks of malware look like stacked as hard drives</title>
+		<link>https://techcrunch.com/2026/05/13/this-is-what-some-of-the-worlds-largest-banks-of-malware-look-like-stacked-as-hard-drives/</link>
+		
+		<dc:creator><![CDATA[Zack Whittaker]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 18:12:29 +0000</pubDate>
+				<category><![CDATA[Security]]></category>
+		<category><![CDATA[cybersecurity]]></category>
+		<category><![CDATA[infographic]]></category>
+		<category><![CDATA[malware]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3121840</guid>
+
+					<description><![CDATA[What would some of the world's largest repositories of malware look like if they were stacked as hard drives, one on top of the other?]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Geothermal startup Fervo Energy pops 33% in IPO debut fueled by AI data center demand</title>
+		<link>https://techcrunch.com/2026/05/13/geothermal-startup-fervo-energy-pops-33-in-ipo-debut-fueled-by-ai-data-center-demand/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 17:42:20 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fervo Energy]]></category>
+		<category><![CDATA[geothermal]]></category>
+		<category><![CDATA[geothermal energy]]></category>
+		<category><![CDATA[IPO]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122252</guid>
+
+					<description><![CDATA[Fervo Energy's IPO was upsized several times after potential investors asked why the enhanced geothermal startup wasn't raising more money.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>X launches a History tab for bookmarks, likes, videos, and articles</title>
+		<link>https://techcrunch.com/2026/05/13/x-launches-a-history-tab-for-bookmarks-likes-videos-and-articles/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 17:16:32 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[social media]]></category>
+		<category><![CDATA[X]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122216</guid>
+
+					<description><![CDATA[X’s new History tab combines bookmarks, likes, watched videos, and read articles into a single place, expanding the app’s role as a save-it-for-later tool.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Instagram&#8217;s new &#8216;Instants&#8217; feature combines elements from Snapchat and BeReal</title>
+		<link>https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal/</link>
+		
+		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 16:57:40 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[bereal]]></category>
+		<category><![CDATA[Instagram]]></category>
+		<category><![CDATA[Meta]]></category>
+		<category><![CDATA[Snapchat]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122200</guid>
+
+					<description><![CDATA[The feature lets users share disappearing photos with their close friends or mutual followers that can be viewed only once and remain available for 24 hours.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Rivian spinoff Mind Robotics raises another $400M</title>
+		<link>https://techcrunch.com/2026/05/13/rivian-spinoff-mind-robotics-raises-another-400m/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 16:34:21 +0000</pubDate>
+				<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[mind robotics]]></category>
+		<category><![CDATA[Rivian]]></category>
+		<category><![CDATA[RJ Scaringe]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122201</guid>
+
+					<description><![CDATA[Mind Robotics, which was first revealed in late 2025, has now raised more than $1 billion to date.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Who trusts Sam Altman?</title>
+		<link>https://techcrunch.com/2026/05/13/who-trusts-sam-altman/</link>
+		
+		<dc:creator><![CDATA[Tim Fernholz]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 16:31:04 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[sam altman]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3121908</guid>
+
+					<description><![CDATA["I believe I am an honest and trustworthy businessperson," Altman testified in federal court.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Origin Lab raises $8M to help video game companies sell data to world-model builders</title>
+		<link>https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/</link>
+		
+		<dc:creator><![CDATA[Russell Brandom]]></dc:creator>
+		<pubDate>Wed, 13 May 2026 16:22:01 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Gaming]]></category>
+		<category><![CDATA[ai labs]]></category>
+		<category><![CDATA[data vendor]]></category>
+		<category><![CDATA[video games]]></category>
+		<category><![CDATA[world models]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3122194</guid>
+
+					<description><![CDATA[Origin Lab will serve as a marketplace where AI labs can buy high-quality licensed data, and video-game companies can sell it.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
