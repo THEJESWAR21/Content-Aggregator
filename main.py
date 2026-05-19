@@ -14,6 +14,8 @@ for i in range(len(blog_feed.entries)):
     print(blog_feed.entries[i].link)
     print(blog_feed.entries[i].author)
     print(blog_feed.entries[i].published)
+    print(blog_feed.entries[i].description)
+    print(blog_feed.entries[i].summary)
 
     print()
 
