@@ -15,7 +15,6 @@ from django.db import models
     # AUTHOR
     # Description
 
-# TODO: Add a Source Model with all the foreign keys configured
 class Source(models.Model):
     site_name = models.CharField(max_length=100, default=None)
     site_link = models.URLField()
