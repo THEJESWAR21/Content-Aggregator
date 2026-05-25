@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="{% static 'articleFeed/style.css' %}"/>
 </head>
 <body>
-    <h1>Hello Django!</h1>
-    <h1>HELLO,WORLD!!</h1>
-    <p>Still in Development</p>
+
+    {% for blog in blogs %}
+    <article>
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.author }}</p>
+        <p>{{ blog.description }}</p>
+        <p>{{ blog.all_tags }}</p>
+    </article>
+    {% endfor %}
+
 </body>
 </html>
