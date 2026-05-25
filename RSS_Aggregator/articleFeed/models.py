@@ -15,22 +15,30 @@ from django.db import models
     # AUTHOR
     # Description
 
+# TODO: Add a Source Model with all the foreign keys configured
 class Source(models.Model):
-    siteName = models.CharField(max_length=100, default=None)
-    siteLink = models.URLField(max_length=500)
+    site_name = models.CharField(max_length=100, default=None)
+    site_link = models.URLField()
+
+    # Controls how each objects appears as a string
+    def __str__(self):
+        return self.site_name
 
 class Authors(models.Model):
-    siteName = models.ForeignKey(Source, on_delete=models.CASCADE,)
+    source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="authors")
     name = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.firstName} {self.lastName}" 
+        return self.name
     
 class Articles(models.Model):
-    siteName = models.ForeignKey(Source, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    link = models.URLField(max_length=500)
-    author = models.ForeignKey(Authors, on_delete=models.CASCADE)
-    description = models.CharField(max_length=200)
-    dateTime = models.DateTimeField()
+    link = models.URLField(max_length=500, unique=True) # Unique prevents 2 rows in the same coloumn to have the same values
+    description = models.TextField()
+    published_at = models.DateTimeField()
     tags = models.CharField(max_length=500)
+    source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="articles")
+    author = models.ForeignKey(Authors, on_delete=models.CASCADE, related_name="articles")
+
+    def __str__(self):
+        return self.title   
