@@ -36,7 +36,7 @@ class Articles(models.Model):
     link = models.URLField(max_length=500, unique=True) # Unique prevents 2 rows in the same coloumn to have the same values
     description = models.TextField()
     published_at = models.DateTimeField()
-    tags = models.CharField(max_length=500)
+    all_tags = models.CharField(max_length=500)
     source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="articles")
     author = models.ForeignKey(Authors, on_delete=models.CASCADE, related_name="articles")
 
