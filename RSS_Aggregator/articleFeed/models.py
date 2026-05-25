@@ -34,9 +34,9 @@ class Authors(models.Model):
 class Articles(models.Model):
     title = models.CharField(max_length=200)
     link = models.URLField(max_length=500, unique=True) # Unique prevents 2 rows in the same coloumn to have the same values
-    description = models.TextField()
-    published_at = models.DateTimeField()
-    all_tags = models.CharField(max_length=500)
+    description = models.TextField(blank=True)
+    published_at = models.DateTimeField(null=True, blank=True)
+    all_tags = models.CharField(max_length=500, blank=True)
     source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="articles")
     author = models.ForeignKey(Authors, on_delete=models.CASCADE, related_name="articles")
 

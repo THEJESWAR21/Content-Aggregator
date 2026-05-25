@@ -1,36 +1,59 @@
-import feedParser
+import feedparser
+
+from datetime import datetime
 from .models import Source, Authors, Articles
 
 def fetch_and_save_feed(feed_url):
-    blog_feed = feedParser.parse(feed_url)
+    blog_feed = feedparser.parse(feed_url)
 
-    tag_list = []
-
-    source = Source.objects.create(
+    # Crates a Source object
+    source, created = Source.objects.get_or_create(
         site_name = blog_feed.feed.title,
         site_link = blog_feed.feed.link
     )
     
 
     for entry in blog_feed.entries:
+        print(entry.title)
 
-        for tag in entry.tags:
-            tag_list.append(tag["term"])
+        # Reset the tags for each article
+        tag_list = []
+
+        # Checking Whether tags exist
+        if hasattr(entry, "tags"):
+            for tag in entry.tags:
+                tag_list.append(tag["term"])
 
         tags = ", ".join(tag_list)
 
 
-        author = Authors.objects.create(
+        # Prevents program from crashing if author didn't exist
+        author_name = entry.get("author", "Unknown Author")
+
+
+        # prevent duplicates
+        # Creates a Author Object
+        author, created = Authors.objects.get_or_create(
             source = source,
-            name = entry.author
+            name = author_name
         )
 
-        article = Articles.objects.create(
-            title = entry.title,
+        # Parasing Datatime string to datetime object
+        published_date = None
+        if entry.get('published_parsed'):
+            published_date = datetime(*entry.published_parsed[:6])
+
+        # Creates a Article Object
+        Articles.objects.get_or_create(
             link = entry.link,
-            description = entry.description,
-            published_at = entry.published,
-            all_tags = tags
+            defaults={
+                "title" : entry.title,
+                "description": entry.get("description", ""),
+                "published_at": published_date,
+                "all_tags": tags,
+                "source": source,
+                "author": author
+            }
         )
 
-fetch_and_save_feed("https://techcrunch.com/feed/")
+# fetch_and_save_feed("https://techcrunch.com/feed/")
