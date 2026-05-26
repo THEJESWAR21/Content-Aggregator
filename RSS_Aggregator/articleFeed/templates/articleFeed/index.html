@@ -4,11 +4,23 @@
 <html>
 <head>
     <title>Content-Aggregator</title>
-
-    <link rel="stylesheet" href="{% static 'articleFeed/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'articleFeed/css/style.css' %}"/>
 </head>
 <body>
     <!-- TODO: create the website frontend -->
+    <div id="title">
+        <h1>RSS Feed Aggregator</h1>
+
+        <form class="rss-input">
+            <input type="text" placeholder="search articles...">
+            <button type="submit">
+                <img src="{% static 'articleFeed/images/rss-icon.png'%}" width="22px" height="22px">
+            </button>
+        </form>
+    </div>
+
+
+<!-- 
     {% for blog in blogs %}
     <article>
         <h2>{{ blog.title }}</h2>
@@ -16,7 +28,7 @@
         <p>{{ blog.description }}</p>
         <p>{{ blog.all_tags }}</p>
     </article>
-    {% endfor %}
+    {% endfor %} -->
 
 </body>
 </html>
