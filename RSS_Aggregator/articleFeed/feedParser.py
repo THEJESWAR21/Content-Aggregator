@@ -3,9 +3,6 @@ import feedparser
 from datetime import datetime
 from .models import Source, Authors, Articles
 
-
-    # TODO: Create the Django Admin Panel to see The Fetching System Work clearly.
-
 def fetch_and_save_feed(feed_url):
     blog_feed = feedparser.parse(feed_url)
 
