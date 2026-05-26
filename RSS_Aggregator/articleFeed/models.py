@@ -2,19 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-# Class BlogSource
-
-# Class Authors
-    # FIRST NAME
-    # LAST 
-# Class Articles
-    # TITLE
-    # LINK
-    # AUTHOR
-    # time published
-    # AUTHOR
-    # Description
-
 class Source(models.Model):
     site_name = models.CharField(max_length=100, default=None)
     site_link = models.URLField()
