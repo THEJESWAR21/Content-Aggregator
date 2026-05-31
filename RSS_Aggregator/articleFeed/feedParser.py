@@ -57,5 +57,3 @@ def fetch_and_save_feed(feed_url):
                 "author": author
             }
         )
-
-# fetch_and_save_feed("https://techcrunch.com/feed/")
