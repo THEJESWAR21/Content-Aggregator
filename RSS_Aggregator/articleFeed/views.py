@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 
@@ -43,4 +43,10 @@ def update_feeds(request):
                 feed.site_link
             )
     return redirect("home")
-    
+
+def delete_feed(request, feed_id):
+    if request.method == "POST":
+        feed = get_object_or_404(Source, id=feed_id)
+        feed.delete()
+
+    return redirect('home')

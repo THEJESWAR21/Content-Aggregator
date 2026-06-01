@@ -37,6 +37,12 @@
             {% for feed in feeds %}
             <li>
                 {{feed.site_link}}
+                <form action="{% url 'delete_feed' feed.id %}" method="POST" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" style="background: none;border: none;cursor: pointer;">
+                        ❌
+                    </button>
+                </form>
             </li>
             {% endfor %}
         </ul>
