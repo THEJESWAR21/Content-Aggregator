@@ -4,4 +4,10 @@ from . import views
 
 urlpatterns = [
     path("", views.home, name="home"),
+
+    path(
+        "update-feeds/",
+        views.update_feeds,
+        name="update_feeds"
+    ),
 ]

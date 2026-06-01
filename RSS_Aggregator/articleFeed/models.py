@@ -4,7 +4,7 @@ from django.db import models
 
 class Source(models.Model):
     site_name = models.CharField(max_length=100, default=None)
-    site_link = models.URLField()
+    site_link = models.URLField(unique=True)
 
     # Controls how each objects appears as a string
     def __str__(self):

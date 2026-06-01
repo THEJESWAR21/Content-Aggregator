@@ -11,19 +11,54 @@
     <div id="title">
         <h1>RSS Feed Aggregator</h1>
 
-        <form class="rss-input">
-            <input type="text" placeholder="Add RSS Feed">
+        <form class="rss-input" method="POST">
+
+            {% csrf_token %}
+
+            <input type="url" name="rss_url" placeholder="Add RSS Feed" required>
             <button type="submit">
+                add feed
                 <!-- <img src="" width="22px" height="22px"> -->
             </button>
         </form>
     </div>
+    <div>
+        <form action="{% url 'update_feeds' %}" method="POST">
+            {% csrf_token %}
+            <button type="submit">
+                Update All Feeds
+            </button>
+        </form>
+    </div>
 
+    <div id="feeds">
+    <h2>Stored Feeds</h2>
+        <ul>
+            {% for feed in feeds %}
+            <li>
+                {{feed.site_link}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="article">
+        {% for article in articles %}
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.description }}</p>
+        <a 
+            href="{{ article.link }}"
+            target="_blank"
+        > 
+        Read Article
+    </a>
+
+        {% endfor %}
+    </div>
 
 <!-- 
     {% for blog in blogs %}
-    <article>
-        <h2>{{ blog.title }}</h2>
+    <article> <h2>{{ blog.title }}</h2>
         <p>{{ blog.author }}</p>
         <p>{{ blog.description }}</p>
         <p>{{ blog.all_tags }}</p>
