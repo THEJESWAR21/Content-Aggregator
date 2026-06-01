@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +6,12 @@
     <link rel="stylesheet" href="{% static 'articleFeed/css/style.css' %}"/>
 </head>
 <body>
-    <!-- TODO: create the website frontend -->
     <div id="title">
         <h1>RSS Feed Aggregator</h1>
 
+        <!-- RSS INPUT FORM -->
         <form class="rss-input" method="POST">
-
             {% csrf_token %}
-
             <input type="url" name="rss_url" placeholder="Add RSS Feed" required>
             <button type="submit">
                 add feed
@@ -22,7 +19,9 @@
             </button>
         </form>
     </div>
-    <div>
+
+    <!-- UPDATE FEED BUTTON -->
+    <div id="update-feed">
         <form action="{% url 'update_feeds' %}" method="POST">
             {% csrf_token %}
             <button type="submit">
@@ -31,6 +30,7 @@
         </form>
     </div>
 
+    <!-- DISPLAYING THE RSS FEED SITE LINKS -->
     <div id="feeds">
     <h2>Stored Feeds</h2>
         <ul>
@@ -47,7 +47,8 @@
             {% endfor %}
         </ul>
     </div>
-
+    
+    <!-- DISPLAYING THE ARTICLES IN THE RSS -->
     <div id="article">
         {% for article in articles %}
         <h2>{{ article.title }}</h2>
@@ -61,15 +62,5 @@
 
         {% endfor %}
     </div>
-
-<!-- 
-    {% for blog in blogs %}
-    <article> <h2>{{ blog.title }}</h2>
-        <p>{{ blog.author }}</p>
-        <p>{{ blog.description }}</p>
-        <p>{{ blog.all_tags }}</p>
-    </article>
-    {% endfor %} -->
-
 </body>
 </html>

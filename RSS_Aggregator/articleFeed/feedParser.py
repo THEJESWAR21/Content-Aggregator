@@ -4,9 +4,12 @@ from datetime import datetime
 from .models import Source, Authors, Articles
 
 def fetch_and_save_feed(feed_url):
+
+    # Parsing the URL
     blog_feed = feedparser.parse(feed_url)
 
-    # Crates a Source object
+
+    # Creating a Source object
     source, created = Source.objects.get_or_create(
         site_link=feed_url,
         defaults={
@@ -16,6 +19,8 @@ def fetch_and_save_feed(feed_url):
 
     for entry in blog_feed.entries:
 
+        # 1. TURNING THE TAGS INTO LISTS
+
         # Reset the tags for each article
         tag_list = []
 
@@ -24,6 +29,7 @@ def fetch_and_save_feed(feed_url):
             for tag in entry.tags:
                 tag_list.append(tag["term"])
 
+        # turn the list into a string
         tags = ", ".join(tag_list)
 
 

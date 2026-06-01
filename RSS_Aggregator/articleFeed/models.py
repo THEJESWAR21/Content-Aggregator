@@ -23,7 +23,7 @@ class Articles(models.Model):
     description = models.TextField(blank=True)
     published_at = models.DateTimeField(null=True, blank=True)
     all_tags = models.CharField(max_length=500, blank=True)
-    source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="articles")
+    source = models.ForeignKey(Source, on_delete=models.CASCADE, related_name="articles") # on delete will delete anything related with the key
     author = models.ForeignKey(Authors, on_delete=models.CASCADE, related_name="articles")
 
     def __str__(self):
