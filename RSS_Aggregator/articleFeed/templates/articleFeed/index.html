@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Content-Aggregator</title>
-    <link rel="stylesheet" href="{% static 'articleFeed/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'articleFeed/css/styles.css' %}?v=2"/>
 </head>
 <body>
     <div id="title">
@@ -13,54 +13,73 @@
         <form class="rss-input" method="POST">
             {% csrf_token %}
             <input type="url" name="rss_url" placeholder="Add RSS Feed" required>
-            <button type="submit">
-                add feed
-                <!-- <img src="" width="22px" height="22px"> -->
+            <button id="rss-button" type="submit">
+                <img src="{% static 'articleFeed/images/rss_logo.png' %}" alt="RSS">
             </button>
         </form>
     </div>
 
-    <!-- UPDATE FEED BUTTON -->
-    <div id="update-feed">
-        <form action="{% url 'update_feeds' %}" method="POST">
-            {% csrf_token %}
-            <button type="submit">
-                Update All Feeds
-            </button>
-        </form>
-    </div>
 
-    <!-- DISPLAYING THE RSS FEED SITE LINKS -->
-    <div id="feeds">
-    <h2>Stored Feeds</h2>
-        <ul>
-            {% for feed in feeds %}
-            <li>
-                {{feed.site_link}}
-                <form action="{% url 'delete_feed' feed.id %}" method="POST" style="display: inline;">
+    <div id="main-content">
+        <div id="article">
+
+            <h2>Articles</h2>
+
+            {% for article in articles %}
+            <div class="article-card">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.description }}</p>
+                <a href="{{ article.link }}" target="_blank"> 
+                    Read Article
+                </a>
+            </div>
+
+            {% empty %}
+
+                <div class="article-empty">
+                    No Incoming Feed
+                </div>
+            {% endfor %}
+        </div>
+
+  <!-- DISPLAYING THE RSS FEED SITE LINKS -->
+        <div id="sources">
+        <h2>Stored Feeds</h2>
+
+            <!-- UPDATE FEED BUTTON -->
+            <div id="update-feed">
+                <form action="{% url 'update_feeds' %}" method="POST">
                     {% csrf_token %}
-                    <button type="submit" style="background: none;border: none;cursor: pointer;">
-                        ❌
+                    <button type="submit">
+                        Update All Feeds
                     </button>
                 </form>
-            </li>
-            {% endfor %}
-        </ul>
+            </div>
+
+            <ul>
+                {% for feed in feeds %}
+                <li>
+                    {{feed.site_link}}
+                    <form action="{% url 'delete_feed' feed.id %}" method="POST" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" style="background: none;border: none;cursor: pointer;">
+                            ❌
+                        </button>
+                    </form>
+                </li>
+            {% empty %}
+
+                <div class="sources-empty">
+                    No Feed Stored
+                </div>
+                {% endfor %}
+            </ul>
+
+        </div>
     </div>
+
+  
     
     <!-- DISPLAYING THE ARTICLES IN THE RSS -->
-    <div id="article">
-        {% for article in articles %}
-        <h2>{{ article.title }}</h2>
-        <p>{{ article.description }}</p>
-        <a 
-            href="{{ article.link }}"
-            target="_blank"
-        > 
-        Read Article
-    </a>
-
-        {% endfor %}
-    </div>
 </body>
 </html>
