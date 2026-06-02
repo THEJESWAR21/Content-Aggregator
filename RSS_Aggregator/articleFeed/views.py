@@ -13,20 +13,14 @@ def home(request):
     if request.method == "POST":
         rss_url = request.POST.get("rss_url")
         if rss_url:
-            Source.objects.get_or_create(
-                site_link = rss_url,
-                defaults = {
-                    "site_name": rss_url
-                }
-            )
+            fetch_and_save_feed(rss_url) 
 
         return redirect("home")
 
     source = Source.objects.all()
 
-    articles = Articles.objects.all().order_by(
-        '-published_at'
-    )
+    articles = Articles.objects.select_related('source').all()
+
 
     context = {
         "feeds": source,

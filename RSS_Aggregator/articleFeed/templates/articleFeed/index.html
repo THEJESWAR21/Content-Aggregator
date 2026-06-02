@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Content-Aggregator</title>
-    <link rel="stylesheet" href="{% static 'articleFeed/css/styles.css' %}?v=2"/>
+    <link rel="stylesheet" href="{% static 'articleFeed/css/styles.css' %}?v=3"/>
 </head>
 <body>
     <div id="title">
@@ -24,7 +24,8 @@
         <div id="article">
 
             <div class="article-header">
-                <h2>Articles</h2>
+                <h1>Articles</h2>
+
                         <div id="update-feed">
                     <form action="{% url 'update_feeds' %}" method="POST">
                         {% csrf_token %}
@@ -35,16 +36,24 @@
                 </div>
             </div>
 
+            {% regroup articles by source.site_name as source_list %}
+
+            {% for group in source_list %}
+
+                <h2 class="source-title">{{ group.grouper }}</h2>
 
 
-            {% for article in articles %}
+            {% for article in group.list %}
             <div class="article-card">
                 <h3>{{ article.title }}</h3>
+                <p style="font-weight: bold;">Author: {{ article.author }}</p>
                 <p>{{ article.description }}</p>
-                <a class="read-link" href="{{ article.link }}" target="_blank"> 
-                    Read Article
+                <!-- <p style="font-weight: bold;">Date Published: {{ article.published_at }}</p> -->
+                <a class="read-link" href="{{ article.link }}" target="_blank">
+                    Read Article ->
                 </a>
             </div>
+            {% endfor %}
 
             {% empty %}
 
@@ -58,14 +67,14 @@
         <div id="sources">
                         <!-- UPDATE FEED BUTTON -->
    
-        <h2>Stored Feeds</h2>
+        <h1>Stored Feeds</h2>
 
 
 
             <ul>
                 {% for feed in feeds %}
                 <li>
-                    {{feed.site_link}}
+                    <h4>{{feed.site_name}}</h4>
                     <form action="{% url 'delete_feed' feed.id %}" method="POST" style="display: inline;">
                         {% csrf_token %}
                         <button type="submit" style="background: none;border: none;cursor: pointer;">

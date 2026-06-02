@@ -3,6 +3,7 @@
 */
 body {
     font-family: Arial;
+    background-color: #f8f9fa;
 }
 
 
@@ -53,9 +54,7 @@ body {
     border: none;
     border-radius: 50%;
 
-    background: linear-gradient(135deg, #ff8c00, #ffb347);
-
-    display:flex;
+    background: linear-gradient(135deg, #2e7d32, #5ec763);
     justify-content: center;
     align-items: center;
 
@@ -68,7 +67,7 @@ body {
 
 #rss-button:hover{
     transform: scale(1.1);
-    background: linear-gradient(135deg, #ff6a00, #ff9a3c);
+    background: linear-gradient(135deg, #00fd11, #3cc043);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  
 }
 
@@ -105,13 +104,13 @@ body {
 
 
 .article-card{
-    background: white;
+    background: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
-    border: 3px solid #eee;
+    border: 2px solid green;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
 
     transition: all 0.3s ease;
 
@@ -122,11 +121,11 @@ body {
 }
 
 .article-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-20px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-
-    border-color: #ddd;
+    border-color: #1A7431;
+    border-width: 35px;
 }
 
 .article-empty{
@@ -194,6 +193,7 @@ body {
     border-color: #146c43;
     background: linear-gradient(135deg, #25692e, #52b618);
     transform: translateY(-2px) scale(1.05);
+
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 

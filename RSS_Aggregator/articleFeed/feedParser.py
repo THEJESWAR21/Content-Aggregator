@@ -8,12 +8,14 @@ def fetch_and_save_feed(feed_url):
     # Parsing the URL
     blog_feed = feedparser.parse(feed_url)
 
+    source_title = getattr(blog_feed.feed, "title", "Unknown Source")
+    source_link = getattr(blog_feed.feed, "link", feed_url)
 
     # Creating a Source object
     source, created = Source.objects.get_or_create(
-        site_link=feed_url,
+        site_link = source_link,
         defaults={
-            "site_name": blog_feed.feed.get("title", feed_url)
+            "site_name": source_title
         }
     )
 
@@ -27,14 +29,14 @@ def fetch_and_save_feed(feed_url):
         # Checking Whether tags exist
         if hasattr(entry, "tags"):
             for tag in entry.tags:
-                tag_list.append(tag["term"])
+                tag_list.append(tag.get("term", ""))
 
         # turn the list into a string
         tags = ", ".join(tag_list)
 
 
         # Prevents program from crashing if author didn't exist
-        author_name = entry.get("author", "Unknown Author")
+        author_name = getattr(entry, "author", "Unknown Author")
 
 
         # prevent duplicates
@@ -56,10 +58,10 @@ def fetch_and_save_feed(feed_url):
 
         # Creates a Article Object
         Articles.objects.get_or_create(
-            link = entry.get("link"),
+            title= getattr(entry, "title", "No Title"),
+            link = getattr(entry, "link", None),
             defaults={
-                "title" : entry.get("title", "No Title"),
-                "description": entry.get("description", ""),
+                "description": getattr(entry, "description", ""),
                 "published_at": published_date,
                 "all_tags": tags,
                 "source": source,
