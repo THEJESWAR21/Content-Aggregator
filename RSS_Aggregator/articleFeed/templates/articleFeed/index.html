@@ -23,13 +23,25 @@
     <div id="main-content">
         <div id="article">
 
-            <h2>Articles</h2>
+            <div class="article-header">
+                <h2>Articles</h2>
+                        <div id="update-feed">
+                    <form action="{% url 'update_feeds' %}" method="POST">
+                        {% csrf_token %}
+                        <button class="update-btn" type="submit">
+                            Update All Feeds
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
 
             {% for article in articles %}
             <div class="article-card">
                 <h3>{{ article.title }}</h3>
                 <p>{{ article.description }}</p>
-                <a href="{{ article.link }}" target="_blank"> 
+                <a class="read-link" href="{{ article.link }}" target="_blank"> 
                     Read Article
                 </a>
             </div>
@@ -44,17 +56,11 @@
 
   <!-- DISPLAYING THE RSS FEED SITE LINKS -->
         <div id="sources">
+                        <!-- UPDATE FEED BUTTON -->
+   
         <h2>Stored Feeds</h2>
 
-            <!-- UPDATE FEED BUTTON -->
-            <div id="update-feed">
-                <form action="{% url 'update_feeds' %}" method="POST">
-                    {% csrf_token %}
-                    <button type="submit">
-                        Update All Feeds
-                    </button>
-                </form>
-            </div>
+
 
             <ul>
                 {% for feed in feeds %}
